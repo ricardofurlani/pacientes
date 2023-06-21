@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Cuidados pela vida - Viva mais e melhor</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- CSS da custom policy -->
+    <link href="https://aadb2cpages.blob.core.windows.net/cpv-pacientes/layout/css/style.css" rel="stylesheet" />
+    <style id="common">
+        @font-face {
+            font-family: 'SegoeUI';
+            src: url(https://acheidentitydev.b2clogin.com/static/tenant/templates/fonts/segoeui.WOFF);
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'SegoeUI';
+            src: url(https://acheidentitydev.b2clogin.com/static/tenant/templates/fonts/segoeui_bold.WOFF);
+            font-weight: bold;
+        }
+
+        .buttons #cancel:before {
+            content: url(https://acheidentitydev.b2clogin.com/static/tenant/templates/images/left-arrow.svg);
+        }
+    </style>
+    <style id="idpselector">
+        #SignInWithLogonNameExchange,
+        #SignUpWithLogonEmailExchange,
+        #SignUpWithLogonNameExchange {
+            background-image: url(https://acheidentitydev.b2clogin.com/static/tenant/templates/idp_logos/colored/local.svg);
+        }
+
+        #SignInWithLogonNameExchange:hover,
+        #SignUpWithLogonEmailExchange:hover,
+        #SignUpWithLogonNameExchange:hover {
+            background-image: url(https://acheidentitydev.b2clogin.com/static/tenant/templates/idp_logos/white/local.svg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container  self_asserted_container ">
+        <div class="row">
+            <div class="header">
+                <div class="containerGlobal">
+                    <div class="toolbarHeader">
+                        <div style="display: flex;">
+                            <input type="checkbox" id="drawer-toggle" style="display: none;">
+                            <label for="drawer-toggle" class="drawer-button">&#9776;</label>
+                            <nav class="drawer-menu">
+                                <ul>
+                                    <li><span>Para Pacientes</span></li>
+                                    <li><a href='http://achedoc.ache.com.br'>Para Profissionais de Saúde</a></li>
+                                    <li><a href='http://farmacias.cuidadospelavida.com.br'>Para seu negócio</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="logoDesktop">
+                            <a href="https://novo.cuidadospelavida.com.br/">
+                                <img alt="Logo" data-tenant-branding-logo="false"
+                                    src="https://aadb2cpages.blob.core.windows.net/cpv-pacientes/layout/header-logo-desktop.c58e89f4.png">
+                            </a>
+                        </div>
+                        <div class="logoMobile">
+                            <a href="https://novo.cuidadospelavida.com.br/">
+                                <img alt="Logo" data-tenant-branding-logo="false"
+                                    src="https://aadb2cpages.blob.core.windows.net/cpv-pacientes/layout/header-logo-mobile.73ab4d9f.png">
+                            </a>
+                        </div>
+                        <div class="contentMenu">
+                            <ul class="Menu">
+                                <li><span>Para Pacientes</span></li>
+                                <li><a href='http://achedoc.ache.com.br'>Para Profissionais de Saúde</a></li>
+                                <li><a href='http://farmacias.cuidadospelavida.com.br'>Para seu negócio</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4 class="title">Inscreva-se</h4>
+                        <div class="content">
+                            <div class="steps">
+                                <div class="mobile-stepper-root">
+                                    <div id="cpfStep" class="mobile-stepper-dot"></div>
+                                    <div id="dateOfBirthStep" class="mobile-stepper-dot"></div>
+                                    <div id="nameStep" class="mobile-stepper-dot"></div>
+                                    <div id="phoneFactor" class="mobile-stepper-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="StepTitle" class="StepTitle"></div>
+                        <div id="api"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS da custom policy -->
+    <script type="text/javascript" src="https://aadb2cpages.blob.core.windows.net/cpv-pacientes/layout/js/script.js"></script>
+</body>
+
+</html>
